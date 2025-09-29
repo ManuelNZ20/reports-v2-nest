@@ -28,8 +28,48 @@
   npx prisma db pull
 ```
 
-4. Generación del cliente de prisma
+5. Generación del cliente de prisma
 
 ```bash
   npx prisma generate
+```
+
+6. Instalación de PDFMake para generación de reportes en PDF
+
+```bash
+  npm install pdfmake
+```
+
+7. Instalación de las tipificaciones de PDFMake
+
+```bash
+  npm i --save-dev @types/pdfmake
+```
+
+## Instrucciones para devs
+
+1. Clonar el repositorio
+
+```bash
+  git clone <url-del-repositorio>
+```
+
+2. Instalar las dependencias
+
+```bash
+  npm install
+```
+
+3. Clonar `.env.template` y renombrarlo a `.env` y completar las variables de entorno.
+
+4. Generar el prisma client
+
+```bash
+  npx prisma generate
+```
+
+5. Ejecutar el proyecto con el comando en desarrollo:
+
+```bash
+  npm run start:dev
 ```
